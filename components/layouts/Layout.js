@@ -4,9 +4,9 @@ import styles from "./Layout.module.css";
 function Layout({ children }) {
   return (
     <>
-      <header>
+      <header className={styles.header}>
         <div className={styles.left}>
-          <Link href="/">FateFul Food</Link>
+          <Link href="/">FateFulFood</Link>
         </div>
         <div className={styles.right}>
           <Link href="/menu">Menu</Link>
@@ -14,7 +14,7 @@ function Layout({ children }) {
         </div>
       </header>
       {children}
-      <footer>
+      <footer className={styles.footer}>
         <p>FateFul FastFood Site | FateFul Food Project &copy;</p>
       </footer>
     </>
